@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap');
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -17,9 +15,14 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Source Sans 3', sans-serif;
-  background-color: var(--navy);
-  color: var(--white);
+  background-image:
+    linear-gradient(135deg, rgba(10,22,40,0.72) 0%, rgba(20,50,80,0.60) 100%),
+    url('./assets/BG.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: 'Georgia', serif;
 }
 
 /* ── HEADER ─────────────────────────────────────── */
@@ -52,11 +55,10 @@ body {
   width: 36px; height: 36px;
   border: 2px solid var(--gold);
   border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 0.7rem;
-  font-weight: 900;
-  color: var(--gold);
+  background-size: cover;       /* scales image to fill the circle */
+  background-position: center;  /* centers it */
+  background-repeat: no-repeat;
+  background-color: var(--navy); /* fallback if image fails to load */
 }
 
 .header-nav {
@@ -118,7 +120,7 @@ body {
   font-size: clamp(2.4rem, 5vw, 4rem);
   font-weight: 900;
   line-height: 1.1;
-  color: var(--white);
+  color: white;
   margin-bottom: 1.2rem;
 }
 
@@ -126,7 +128,7 @@ body {
 
 .hero-subtitle {
   font-size: 1.05rem;
-  color: var(--muted);
+  color: white;
   line-height: 1.7;
   max-width: 480px;
   margin-bottom: 2.2rem;
@@ -162,8 +164,7 @@ body {
 }
 
 .stat-card {
-  background: var(--card-bg);
-  border: 1px solid rgba(201,168,76,0.2);
+  background: transparent;
   border-radius: 6px;
   padding: 1.4rem 1.6rem;
   min-width: 140px;
@@ -203,14 +204,14 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 1.9rem;
   font-weight: 700;
-  color: var(--white);
+  color: white;
 }
 
 .section-title span { color: var(--gold); }
 
 .section-count {
   font-size: 0.8rem;
-  color: var(--muted);
+  color: rgb(10 22 40 / 92%);
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }

@@ -1,6 +1,7 @@
 import './App.css'
 import dtrImage from './assets/DTR.jpg'
 import queryImage from './assets/Query.jpg'
+import onlyLogo from './assets/onlyLogo.png'
 // ── Types ────────────────────────────────────────────────────────────────────
 type StatusType = 'live' | 'beta' | 'coming'
 
@@ -111,7 +112,7 @@ export default function Page() {
       {/* ── HEADER ─────────────────────────────────────── */}
       <header className="header">
         <div className="header-logo">
-          <div className="header-logo-badge">D</div>
+          <div className="header-logo-badge" style={{ backgroundImage: `url(${onlyLogo})` }} />
           Dean's Office
         </div>
         <nav>
