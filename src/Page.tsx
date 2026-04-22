@@ -1,5 +1,5 @@
 import './App.css'
-import dtrImage from './assets/DTR.jpg'
+import dtrImage from './assets/DTR2.png'
 import queryImage from './assets/Query.jpg'
 import onlyLogo from './assets/onlyLogo.png'
 // ── Types ────────────────────────────────────────────────────────────────────
@@ -26,7 +26,7 @@ const SYSTEMS: SystemCard[] = [
       'Daily Time Record management for faculty and staff. Log attendance, view history, and generate printable reports in compliance with CSC requirements.',
     image: dtrImage,
     status: 'live',
-    visitUrl: 'https://dtr-system-new.vercel.app/',
+    visitUrl: 'https://dtr-system-v1.vercel.app/',
     infoUrl: '#',
   },
   {

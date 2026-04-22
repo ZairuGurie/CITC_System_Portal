@@ -16,7 +16,7 @@ html { scroll-behavior: smooth; }
 
 body {
   background-image:
-    linear-gradient(135deg, rgba(10,22,40,0.72) 0%, rgba(20,50,80,0.60) 100%),
+    linear-gradient(135deg, rgba(43, 43, 43, 0.72) 0%, rgba(30, 41, 53, 0.6) 100%),
     url('./assets/BG.jpg');
   background-size: cover;
   background-position: center;
@@ -45,7 +45,7 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.04em;
-  color: var(--gold);
+  color: var(--white);
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -77,7 +77,7 @@ body {
   transition: color 0.2s;
 }
 
-.header-nav a:hover { color: var(--gold); }
+.header-nav a:hover { color: var(--white); }
 
 /* ── HERO ─────────────────────────────────────── */
 .hero {
@@ -124,7 +124,7 @@ body {
   margin-bottom: 1.2rem;
 }
 
-.hero-title span { color: var(--gold); }
+.hero-title span { color: rgba(255, 255, 255, 0.92); }
 
 .hero-subtitle {
   font-size: 1.05rem;
@@ -139,7 +139,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  background: var(--gold);
+  background: rgba(18, 34, 58, 0.92);
   color: var(--navy);
   font-weight: 700;
   font-size: 0.88rem;
@@ -151,6 +151,7 @@ body {
   border: none;
   cursor: pointer;
   transition: background 0.2s, transform 0.2s;
+  color: var(--white);
 }
 
 .hero-cta:hover { background: var(--gold-2); transform: translateY(-1px); }
@@ -211,7 +212,7 @@ body {
 
 .section-count {
   font-size: 0.8rem;
-  color: rgb(10 22 40 / 92%);
+  color: rgba(255, 255, 255, 0.92);
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -224,7 +225,7 @@ body {
 }
 
 .system-card {
-  background: var(--card-bg);
+  background: rgba(5, 23, 66, 0.658);
   border: 1px solid rgba(201,168,76,0.15);
   border-radius: 8px;
   overflow: hidden;
