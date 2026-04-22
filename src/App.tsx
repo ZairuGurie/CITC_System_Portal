@@ -1,5 +1,6 @@
 import {Routes, Route} from 'react-router-dom'
 import Login from './Page.tsx'
+import'./App.css'
 
 function App() {
 
